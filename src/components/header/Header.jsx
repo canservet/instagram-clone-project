@@ -24,9 +24,9 @@ const Header = ({handleOpen}) => {
                 </div>
                 <div className="header-link">
                     <a href="/"> < HomeOutlinedIcon  className='icon'/> </a>
-                    <a href="/"> < ChatBubbleOutlineOutlinedIcon className='icon' /> </a>
+                    <a href="/messenger"> < ChatBubbleOutlineOutlinedIcon className='icon' /> </a>
                     < AddBoxOutlinedIcon style={{cursor:"pointer"}}  className='icon' onClick={handleOpen}/>
-                    <Avatar alt="Remy Sharp"
+                    <Avatar   alt="Remy Sharp"
                      src="https://yt3.ggpht.com/yti/AHXOFjVnX4FGZdlPERoxEsdOZuTysSOFHqejy1JaDU-XGg=s88-c-k-c0x00ffffff-no-rj-mo"  />
                 </div>
             </div>

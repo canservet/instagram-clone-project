@@ -4,10 +4,10 @@ import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import React from 'react'
 import { Avatar } from "@mui/material"
 
-const Post = () => {
+const Post = ({top,bottom}) => {
   return (
     <div className="post-wrapper ">
-      <div className="post-header">
+     {top && ( <div className="post-header">
          <div className="post-header-left">
           <a href ="/"> 
           <Avatar src="https://yt3.ggpht.com/yti/AHXOFjVnX4FGZdlPERoxEsdOZuTysSOFHqejy1JaDU-XGg=s88-c-k-c0x00ffffff-no-rj-mo"  
@@ -18,11 +18,11 @@ const Post = () => {
          <div className="post-header-right">
           <button> <MoreHorizOutlinedIcon /> </button>
          </div>
-      </div>
+      </div>)}
       <div className="post-image">
         <img src="/images/post/1.png" alt="Post İmage" ></img>
       </div>
-      <div className="post-bottom">
+   {bottom && (   <div className="post-bottom">
         <div className="post-like">
           <FavoriteOutlinedIcon  className="post-like-icon active "/>
         </div>
@@ -39,7 +39,7 @@ const Post = () => {
         </div>
        
         <div className="post-time"> 1 dakika önce</div>
-      </div>
+      </div>)}
     </div>
   )
 }

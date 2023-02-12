@@ -1,5 +1,5 @@
 .post-wrapper {
-  border: 1px solid rgba(140, 32, 32, 0.2);
+  border:  1px solid  ;
 }
 
 .post-header {
@@ -25,11 +25,11 @@
   background-color: #fbfbfbde;
 }
 
-.post-header .post-image {
+.post-wrapper  .post-image {
   display: flex;
 }
 
-.post-header .post-image img {
+.post-wrapper .post-image img {
   object-fit: cover;
 }
 
